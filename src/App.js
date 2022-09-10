@@ -1,5 +1,11 @@
+import Films from "./components/Films";
+
 function App() {
-  return <div>Set up</div>;
+  return (
+    <section>
+      <Films />
+    </section>
+  );
 }
 
 export default App;
