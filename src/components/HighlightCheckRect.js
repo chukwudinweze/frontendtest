@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./HighlightCheckRect.module.css";
 
-const HighlightCheckRect = () => {
-  return <div className={styles.div}></div>;
+const HighlightCheckRect = ({ color }) => {
+  return <div className={styles.div} style={{ background: color }}></div>;
 };
 
 export default HighlightCheckRect;

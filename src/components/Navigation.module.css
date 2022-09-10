@@ -2,4 +2,62 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
+}
+li,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #ffffff;
+}
+.arrowBack {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a4a7b7;
+}
+
+.hidden {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a4a7b7;
+  visibility: hidden;
+}
+.ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.notification {
+  border-right: 2px solid #e5e5e5;
+  padding-right: 30px;
+}
+.account {
+  display: flex;
+}
+
+.account p {
+  margin-left: 10px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: -0.117188px;
+
+  color: #303b54;
+}
+
+.ul li {
+  padding: 10px 20px;
 }

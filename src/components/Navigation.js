@@ -5,31 +5,33 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import styles from "./Navigation.module.css";
 
-const Navigation = () => {
+const Navigation = ({ showArrowBack }) => {
+  console.log(showArrowBack);
   return (
     <nav className={styles.nav}>
-      <div>
+      <button className={showArrowBack ? styles.arrowBack : styles.hidden}>
         <ArrowBackIosIcon />
         Back
-      </div>
+      </button>
 
-      <ul>
+      <ul className={styles.ul}>
         <li>
-          <button>
-            <NotificationsNoneIcon />
+          <button className={styles.notification}>
+            <NotificationsNoneIcon style={{ color: "#333758" }} />
           </button>
         </li>
-        <li>
+        <li className={styles.account}>
           <button>
-            <AccountCircleIcon />
+            <AccountCircleIcon
+              style={{ color: "#4F84CF", width: "30px", height: "30px" }}
+            />
           </button>
           <p>John Doe</p>
         </li>
         <li>
           <button>
-            <MoreHorizIcon />
+            <MoreHorizIcon style={{ color: "#C4C4C4" }} />
           </button>
-          <p>John Doe</p>
         </li>
       </ul>
     </nav>

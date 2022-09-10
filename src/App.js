@@ -1,17 +1,8 @@
-import DataHighlight from "./components/DataHighlight";
-import FilmsTable from "./components/FilmsTable";
-import Header from "./components/Header";
-import PageTitle from "./components/PageTitle";
+import Overview from "./components/Overview";
+import SideNav from "./components/SideNav";
 
 function App() {
-  return (
-    <section>
-      <Header />
-      <DataHighlight />
-      <PageTitle title="films" />
-      <FilmsTable />
-    </section>
-  );
+  return <SideNav />;
 }
 
 export default App;

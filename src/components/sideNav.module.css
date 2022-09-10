@@ -1,0 +1,18 @@
+aside {
+  background: #031434;
+  height: 100vh;
+  width: 300px;
+  padding-top: 30px;
+}
+
+.nav {
+  background: #031434;
+  /* display: flex; */
+}
+
+.aside,
+.nav,
+.navList {
+  height: 100vh;
+  background: #031434;
+}

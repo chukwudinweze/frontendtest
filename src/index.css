@@ -13,4 +13,10 @@ html {
 
 body {
   /* overflow: auto; */
+  font-family: sans-serif;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
 }
