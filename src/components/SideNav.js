@@ -14,23 +14,45 @@ const SideNav = () => {
           <Logo />
           <NavItem
             to="/overview"
-            icon={GridViewIcon}
+            Icon={GridViewIcon}
             title="Overview"
           ></NavItem>
           <div className={styles.navsections}>
             <NavItem
               to="/starships"
-              icon={<HighlightCheckRect color="blue" />}
+              Checkbox={
+                <HighlightCheckRect
+                  color="#A9C1FF"
+                  width="16px"
+                  height="17px"
+                  marginRight="20px"
+                  marginLeft="20px"
+                />
+              }
               title="Starships"
             ></NavItem>
             <NavItem
               to="/people"
-              icon={<HighlightCheckRect color="yello" />}
+              Checkbox={
+                <HighlightCheckRect
+                  color="#FFA9EC"
+                  width="16px"
+                  height="17px"
+                  marginRight="20px"
+                />
+              }
               title="People"
             ></NavItem>
             <NavItem
               to="/specie"
-              icon={<HighlightCheckRect color="yello" />}
+              Checkbox={
+                <HighlightCheckRect
+                  color="#FDFFA9"
+                  width="16px"
+                  height="17px"
+                  marginRight="20px"
+                />
+              }
               title="Specie"
             ></NavItem>
           </div>

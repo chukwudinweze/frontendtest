@@ -1,4 +1,27 @@
 .navItem {
-  /* display: none; */
-  background: #031434;
+  background: var(--brand-color);
+  width: 100%;
+}
+
+.navlink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: right;
+  flex: 1;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.navlink:hover {
+  background: #0a74dc;
+  border-radius: 4px;
+}
+
+.navlink:active {
+  background: #0a74dc;
+  border-radius: 4px;
 }

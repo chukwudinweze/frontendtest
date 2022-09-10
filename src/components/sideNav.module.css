@@ -1,12 +1,12 @@
 aside {
-  background: #031434;
+  background: var(--brand-color);
   height: 100vh;
-  width: 300px;
+  width: 200px;
   padding-top: 30px;
 }
 
 .nav {
-  background: #031434;
+  background: var(--brand-color);
   /* display: flex; */
 }
 
@@ -14,5 +14,17 @@ aside {
 .nav,
 .navList {
   height: 100vh;
-  background: #031434;
+  background: var(--brand-color);
+}
+
+.navList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.navsections {
+  margin-top: 10px;
 }

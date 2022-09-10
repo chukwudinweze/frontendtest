@@ -20,3 +20,12 @@ body {
 li {
   list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* global variables */
+:root {
+  --brand-color: #031434;
+}
