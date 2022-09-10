@@ -4,7 +4,7 @@ import styles from "./data__table.module.css";
 import useFetchData from "./UseFetchData";
 import CheckPointRect from "./CheckPointRect";
 const url = "https://swapi.dev/api/films";
-const Films = () => {
+const FilmsTable = () => {
   const { fetchData, response } = useFetchData(url);
   const { error, loading, result } = response;
 
@@ -30,6 +30,7 @@ const Films = () => {
             <CheckPointRect />
           </th>
           <th>Film Title</th>
+
           <th>Release Date</th>
           <th>Director</th>
           <th>Producer</th>
@@ -70,4 +71,4 @@ const Films = () => {
   );
 };
 
-export default Films;
+export default FilmsTable;

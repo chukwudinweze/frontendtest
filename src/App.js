@@ -1,9 +1,15 @@
-import Films from "./components/Films";
+import DataHighlight from "./components/DataHighlight";
+import FilmsTable from "./components/FilmsTable";
+import Header from "./components/Header";
+import PageTitle from "./components/PageTitle";
 
 function App() {
   return (
     <section>
-      <Films />
+      <Header />
+      <DataHighlight />
+      <PageTitle title="films" />
+      <FilmsTable />
     </section>
   );
 }

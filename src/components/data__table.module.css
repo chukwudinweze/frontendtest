@@ -1,4 +1,4 @@
-table {
+/* table {
   border-collapse: collapse;
   width: 100%;
   background: #ffffff;
@@ -21,13 +21,13 @@ tr:hover {
 
 th,
 td {
-  /* font-weight: 500; */
+  font-weight: 500;
   font-style: normal;
-  /* font-size: 16px; */
-  /* line-height: 24px; */
+  font-size: 16px;
+  line-height: 24px;
   color: #a4a7b7;
-  /* padding: 30px; */
-  /* border: 1px solid red; */
+  padding: 30px;
+  border: 1px solid red;
 }
 td {
   color: #434854;
@@ -35,4 +35,31 @@ td {
 
 td:last-child {
   color: #303b54;
+}
+
+tbody {
+  border: 1px solid red;
+} */
+
+table {
+  /* border-collapse: collapse; */
+  padding: 0 20px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(164, 167, 183, 0.4);
+  border-radius: 4px;
+}
+
+tr {
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 0px 30px rgba(13, 47, 161, 0.07);
+  text-align: left;
+  height: 70px;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 16px;
 }
