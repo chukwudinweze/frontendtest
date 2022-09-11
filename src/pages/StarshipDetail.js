@@ -1,7 +1,7 @@
 import React from "react";
+import StarshipDetails from "../components/StarshipDetails";
 
 const StarshipDetail = () => {
-  return <div>Hello from StarshipDetail</div>;
+  return <StarshipDetails />;
 };
-
 export default StarshipDetail;

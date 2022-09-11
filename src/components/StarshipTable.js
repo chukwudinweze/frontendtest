@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import styles from "./data__table.module.css";
 import useFetchData from "./UseFetchData";
-import CheckPointRect from "./CheckPointRect";
+import { Link } from "react-router-dom";
+import CheckBox from "./CheckBox";
 const url = "https://swapi.dev/api/starships";
 
 const StarshipTable = () => {
@@ -28,7 +29,7 @@ const StarshipTable = () => {
       <thead>
         <tr>
           <th>
-            <CheckPointRect />
+            <CheckBox />
           </th>
           <th>Name</th>
           <th>Model</th>
@@ -41,19 +42,38 @@ const StarshipTable = () => {
       <tbody>
         {result &&
           result.map((person, index) => {
-            const { name, model, starship_class, passengers, length, url } =
-              person;
+            const {
+              name,
+              model,
+              starship_class,
+              passengers,
+              length,
+              url,
+              id = index + 2,
+            } = person;
             return (
               <tr key={index}>
                 <td>
-                  <CheckPointRect />
+                  <CheckBox />
                 </td>
-                <td>{name}</td>
-                <td>{model}</td>
-                <td>{starship_class}</td>
-                <td>{passengers}</td>
-                <td>{length}</td>
-                <td>{url}</td>
+                <td>
+                  <Link to={`/people/${id}`}>{name}</Link>
+                </td>
+                <td>
+                  <Link to={`/starships/${id}`}>{model}</Link>
+                </td>
+                <td>
+                  <Link to={`/starships/${id}`}>{starship_class}</Link>
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{passengers}</Link>
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{length}</Link>
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{url}</Link>
+                </td>
               </tr>
             );
           })}

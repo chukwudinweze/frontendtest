@@ -43,6 +43,7 @@ const FilmsTable = () => {
       <tbody>
         {result &&
           result.map((contact, index) => {
+            console.log(index);
             const {
               title,
               release_date,
@@ -50,12 +51,13 @@ const FilmsTable = () => {
               producer,
               episode_id,
               characters,
+              id = index + 1,
             } = contact;
 
             //   format date
             const releaseDate = formatDate(release_date);
             return (
-              <Link to={`/films/${1}`}>
+              <Link to={`/films/${id}`}>
                 <tr key={index}>
                   <td>
                     <CheckPointRect />

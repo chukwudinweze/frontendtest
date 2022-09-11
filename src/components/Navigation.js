@@ -4,12 +4,16 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import styles from "./Navigation.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = ({ showArrowBack }) => {
-  console.log(showArrowBack);
+  const navigate = useNavigate();
   return (
     <nav className={styles.nav}>
-      <button className={showArrowBack ? styles.arrowBack : styles.hidden}>
+      <button
+        className={showArrowBack ? styles.arrowBack : styles.hidden}
+        onClick={() => navigate(-1)}
+      >
         <ArrowBackIosIcon />
         Back
       </button>
