@@ -1,0 +1,21 @@
+strong {
+  font-size: 24px;
+}
+p {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #737373;
+}
+.email {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.password,
+.button {
+  margin-bottom: 20px;
+}

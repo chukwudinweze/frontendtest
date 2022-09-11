@@ -3,17 +3,18 @@ import { formatDate } from "./formatDate";
 import styles from "./data__table.module.css";
 import useFetchData from "./UseFetchData";
 import CheckPointRect from "./CheckPointRect";
+import { Link, useParams } from "react-router-dom";
 
 const url = "https://swapi.dev/api/films";
 const FilmsTable = () => {
   const { fetchData, response } = useFetchData(url);
   const { error, loading, result } = response;
 
+  const params = useParams();
+
   useEffect(() => {
     fetchData();
   }, [fetchData]);
-
-  console.log(response);
 
   if (loading) {
     return <p>Loading data...</p>;
@@ -54,17 +55,19 @@ const FilmsTable = () => {
             //   format date
             const releaseDate = formatDate(release_date);
             return (
-              <tr key={index}>
-                <td>
-                  <CheckPointRect />
-                </td>
-                <td>{title}</td>
-                <td>{releaseDate}</td>
-                <td>{director}</td>
-                <td>{producer}</td>
-                <td>{episode_id}</td>
-                <td>{characters[0]}</td>
-              </tr>
+              <Link to={`/films/${1}`}>
+                <tr key={index}>
+                  <td>
+                    <CheckPointRect />
+                  </td>
+                  <td>{title}</td>
+                  <td>{releaseDate}</td>
+                  <td>{director}</td>
+                  <td>{producer}</td>
+                  <td>{episode_id}</td>
+                  <td>{characters[0]}</td>
+                </tr>
+              </Link>
             );
           })}
       </tbody>

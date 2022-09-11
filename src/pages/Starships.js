@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
 import styles from "../components/Layout.module.css";
-import Overview from "../components/Overview";
 import PageTitle from "../components/PageTitle";
 import SideNav from "../components/SideNav";
 import StarshipTable from "../components/StarshipTable";

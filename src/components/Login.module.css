@@ -1,0 +1,42 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--brand-color);
+  padding: 0 20px;
+  height: 100vh;
+}
+
+.formgroup {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 30px;
+  border: 1px solid rgba(164, 167, 183, 0.3);
+  border-radius: 8px;
+  width: 300px;
+}
+
+.termOFservice {
+  display: flex;
+  justify-content: center;
+}
+
+.termOFservice p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #777c8a;
+  margin: 0 5px;
+}
