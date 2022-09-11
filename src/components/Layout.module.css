@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sideNavPosition {
+  flex: 1;
+}
+
+.formatpage {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}

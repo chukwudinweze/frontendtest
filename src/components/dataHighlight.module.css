@@ -1,14 +1,14 @@
 .section {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 208px;
+  width: 180px;
   height: 130px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

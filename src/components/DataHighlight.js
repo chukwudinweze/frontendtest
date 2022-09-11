@@ -4,7 +4,6 @@ import NewDataEnteries from "./NewDataEnteries";
 import NumberOfEntries from "./NumberOfEntries";
 import OverviewTitle from "./OverviewTitle";
 import styles from "./dataHighlight.module.css";
-// import OverviewTitle from "./overviewTitle";
 
 const DataHighlight = () => {
   return (
@@ -21,7 +20,7 @@ const DataHighlight = () => {
       </article>
       <article className={styles.article}>
         <div className={styles.title}>
-          <OverviewTitle title="Films" />
+          <OverviewTitle title="Starships" />
           <HighlightCheckRect color="#A9C1FF" />
         </div>
         <div className={styles.entries}>
@@ -31,7 +30,7 @@ const DataHighlight = () => {
       </article>
       <article className={styles.article}>
         <div className={styles.title}>
-          <OverviewTitle title="Films" />
+          <OverviewTitle title="People" />
           <HighlightCheckRect color="#FFA9EC" />
         </div>
         <div className={styles.entries}>
@@ -41,7 +40,7 @@ const DataHighlight = () => {
       </article>
       <article className={styles.article}>
         <div className={styles.title}>
-          <OverviewTitle title="Films" />
+          <OverviewTitle title="Species" />
           <HighlightCheckRect color="#FDFFA9" />
         </div>
         <div className={styles.entries}>

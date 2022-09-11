@@ -3,10 +3,11 @@ import { formatDate } from "./formatDate";
 import styles from "./data__table.module.css";
 import useFetchData from "./UseFetchData";
 import CheckPointRect from "./CheckPointRect";
+const url = "https://swapi.dev/api/species";
 
-const url = "https://swapi.dev/api/films";
-const FilmsTable = () => {
+const SpeciesTable = () => {
   const { fetchData, response } = useFetchData(url);
+
   const { error, loading, result } = response;
 
   useEffect(() => {
@@ -30,40 +31,39 @@ const FilmsTable = () => {
           <th>
             <CheckPointRect />
           </th>
-          <th>Film Title</th>
-
-          <th>Release Date</th>
-          <th>Director</th>
-          <th>Producer</th>
-          <th>Episode ID</th>
-          <th>Character</th>
+          <th>Name</th>
+          <th>Classification</th>
+          <th>Eye Colors</th>
+          <th>Hair Color</th>
+          <th>Height</th>
+          <th>Created</th>
         </tr>
       </thead>
       <tbody>
         {result &&
-          result.map((contact, index) => {
+          result.map((specie, index) => {
             const {
-              title,
-              release_date,
-              director,
-              producer,
-              episode_id,
-              characters,
-            } = contact;
+              name,
+              classification,
+              eye_colors,
+              hair_colors,
+              average_height,
+              created,
+            } = specie;
 
             //   format date
-            const releaseDate = formatDate(release_date);
+            const releaseDate = formatDate(created);
             return (
               <tr key={index}>
                 <td>
                   <CheckPointRect />
                 </td>
-                <td>{title}</td>
+                <td>{name}</td>
+                <td>{classification}</td>
+                <td>{eye_colors}</td>
+                <td>{hair_colors}</td>
+                <td>{average_height}</td>
                 <td>{releaseDate}</td>
-                <td>{director}</td>
-                <td>{producer}</td>
-                <td>{episode_id}</td>
-                <td>{characters[0]}</td>
               </tr>
             );
           })}
@@ -72,4 +72,4 @@ const FilmsTable = () => {
   );
 };
 
-export default FilmsTable;
+export default SpeciesTable;

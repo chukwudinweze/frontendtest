@@ -1,0 +1,10 @@
+.loginLogo {
+  background: var(--brand-color);
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.loginLogo img {
+  max-width: 100%;
+}

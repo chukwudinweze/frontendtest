@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import { formatDate } from "./formatDate";
 import styles from "./data__table.module.css";
 import useFetchData from "./UseFetchData";
 import CheckPointRect from "./CheckPointRect";
+const url = "https://swapi.dev/api/starships";
 
-const url = "https://swapi.dev/api/films";
-const FilmsTable = () => {
+const StarshipTable = () => {
   const { fetchData, response } = useFetchData(url);
+
   const { error, loading, result } = response;
 
   useEffect(() => {
@@ -30,40 +30,30 @@ const FilmsTable = () => {
           <th>
             <CheckPointRect />
           </th>
-          <th>Film Title</th>
-
-          <th>Release Date</th>
-          <th>Director</th>
-          <th>Producer</th>
-          <th>Episode ID</th>
-          <th>Character</th>
+          <th>Name</th>
+          <th>Model</th>
+          <th>Class</th>
+          <th>Passenger Color</th>
+          <th>Length</th>
+          <th>Characted</th>
         </tr>
       </thead>
       <tbody>
         {result &&
-          result.map((contact, index) => {
-            const {
-              title,
-              release_date,
-              director,
-              producer,
-              episode_id,
-              characters,
-            } = contact;
-
-            //   format date
-            const releaseDate = formatDate(release_date);
+          result.map((person, index) => {
+            const { name, model, starship_class, passengers, length, url } =
+              person;
             return (
               <tr key={index}>
                 <td>
                   <CheckPointRect />
                 </td>
-                <td>{title}</td>
-                <td>{releaseDate}</td>
-                <td>{director}</td>
-                <td>{producer}</td>
-                <td>{episode_id}</td>
-                <td>{characters[0]}</td>
+                <td>{name}</td>
+                <td>{model}</td>
+                <td>{starship_class}</td>
+                <td>{passengers}</td>
+                <td>{length}</td>
+                <td>{url}</td>
               </tr>
             );
           })}
@@ -72,4 +62,4 @@ const FilmsTable = () => {
   );
 };
 
-export default FilmsTable;
+export default StarshipTable;

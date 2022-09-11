@@ -44,7 +44,7 @@ const SideNav = () => {
               title="People"
             ></NavItem>
             <NavItem
-              to="/specie"
+              to="/species"
               Checkbox={
                 <HighlightCheckRect
                   color="#FDFFA9"
@@ -53,7 +53,7 @@ const SideNav = () => {
                   marginRight="20px"
                 />
               }
-              title="Specie"
+              title="Species"
             ></NavItem>
           </div>
         </ul>

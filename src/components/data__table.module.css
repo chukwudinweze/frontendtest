@@ -18,9 +18,9 @@ tr:hover {
 td,
 th {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #303b54;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 th {
   color: #a4a7b7;

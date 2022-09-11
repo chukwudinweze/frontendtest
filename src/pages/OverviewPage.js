@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Overview from "./Overview";
-import SideNav from "./SideNav";
-import styles from "./Layout.module.css";
+import Header from "../components/Header";
+import Overview from "../components/Overview";
+import SideNav from "../components/SideNav";
+import styles from "../components/Layout.module.css";
 
-const Layout = () => {
+const OverviewPage = () => {
   return (
     <main className={styles.main}>
       <div className={styles.sideNavPosition}>
@@ -18,4 +18,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default OverviewPage;
