@@ -16,7 +16,7 @@ const FilmDetails = () => {
     fetchdata();
   }, [fetchdata]);
 
-  const { director, producer, release_date } = detail;
+  const { director, producer, release_date, title } = detail;
 
   if (loading) {
     return <p>Details Loading...</p>;
@@ -31,7 +31,7 @@ const FilmDetails = () => {
         <img src={CoverPicture} alt="filmCover" />
       </div>
       <article className={styles.article}>
-        <strong>Cover</strong>
+        <strong>{title}</strong>
         <p>Director:{director}</p>
         <p>Producer:{producer}</p>
         <p>Release Date:{release_date}</p>

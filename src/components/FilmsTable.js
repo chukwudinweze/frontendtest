@@ -57,19 +57,35 @@ const FilmsTable = () => {
             //   format date
             const releaseDate = formatDate(release_date);
             return (
-              <Link to={`/films/${id}`}>
-                <tr key={index}>
-                  <td>
-                    <CheckPointRect />
-                  </td>
-                  <td>{title}</td>
-                  <td>{releaseDate}</td>
-                  <td>{director}</td>
-                  <td>{producer}</td>
-                  <td>{episode_id}</td>
-                  <td>{characters[0]}</td>
-                </tr>
-              </Link>
+              <tr key={index}>
+                <td>
+                  <CheckPointRect />
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{title}</Link>
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{releaseDate}</Link>
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{director}</Link>
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{producer}</Link>
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{releaseDate}</Link>
+                </td>
+                <td>
+                  <Link to={`/people/${id}`}>{releaseDate}</Link>
+                </td>
+                <td>{title}</td>
+                <td>{releaseDate}</td>
+                <td>{director}</td>
+                <td>{producer}</td>
+                <td>{episode_id}</td>
+                <td>{characters[0]}</td>
+              </tr>
             );
           })}
       </tbody>
