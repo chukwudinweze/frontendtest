@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useFetchDetail from "./useFetchDetail";
-import CoverPicture from "../images/filmsCover.png";
+import CoverPicture from "../images/starshipsCover.png";
 import styles from "./FilmDetails.module.css";
 
 const StarshipDetails = () => {
@@ -17,7 +17,7 @@ const StarshipDetails = () => {
     fetchdata();
   }, [fetchdata]);
 
-  const { model, passengers, pilots } = detail;
+  const { model, passengers, pilots, name } = detail;
 
   if (loading) {
     return <p>Details Loading...</p>;
@@ -29,10 +29,10 @@ const StarshipDetails = () => {
   return (
     <section className={styles.section}>
       <div>
-        <img src={CoverPicture} alt="filmCover" />
+        <img src={CoverPicture} alt="Starship Cover" />
       </div>
       <article className={styles.article}>
-        <strong>Cover</strong>
+        <strong>{name}</strong>
         <p>Model:{model}</p>
         <p>Passengers:{passengers}</p>
         <p>

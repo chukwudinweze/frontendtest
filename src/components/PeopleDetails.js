@@ -16,7 +16,7 @@ const PeopleDetails = () => {
     fetchdata();
   }, [fetchdata]);
 
-  const { gender, birth_year, skin_color, height } = detail;
+  const { gender, birth_year, skin_color, height, name } = detail;
 
   if (loading) {
     return <p>Details Loading...</p>;
@@ -31,7 +31,7 @@ const PeopleDetails = () => {
         <img src={CoverPicture} alt="People Cover" />
       </div>
       <article className={styles.article}>
-        <strong>Cover</strong>
+        <strong>{name}</strong>
         <p>Gender:{gender}</p>
         <p>Year of birth:{birth_year}</p>
         <p>Skin Color:{skin_color}</p>
