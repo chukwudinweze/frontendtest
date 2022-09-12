@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import AuthPage from "./pages/AuthPage";
-import FilmDetail from "./pages/FilmDetail";
+import FilmDetail from "./pages/DetailPage/FilmDetail";
 import NotFoundPage from "./pages/NotFoundPage";
-import OverviewPage from "./pages/OverviewPage";
-import People from "./pages/People";
-import PeopleDetail from "./pages/PeopleDetail";
-import Species from "./pages/Species";
-import SpeciesDetail from "./pages/SpeciesDetail";
-import StarshipDetail from "./pages/StarshipDetail";
-import Starships from "./pages/Starships";
+import OverviewPage from "./pages/Table/OverviewPage";
+import People from "./pages/Table/People";
+import PeopleDetail from "./pages/DetailPage/PeopleDetail";
+import Species from "./pages/Table/Species";
+import SpeciesDetail from "./pages/DetailPage/SpeciesDetail";
+import StarshipDetail from "./pages/DetailPage/StarshipDetail";
+import Starships from "./pages/Table/Starships";
 
 function App() {
   return (
