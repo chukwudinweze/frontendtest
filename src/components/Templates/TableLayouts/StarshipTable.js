@@ -14,8 +14,6 @@ const StarshipTable = () => {
     fetchData();
   }, [fetchData]);
 
-  console.log(response);
-
   if (loading) {
     return <p>Loading data...</p>;
   }

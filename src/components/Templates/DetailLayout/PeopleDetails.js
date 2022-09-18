@@ -32,10 +32,10 @@ const PeopleDetails = () => {
       </div>
       <article className={styles.article}>
         <strong>{name}</strong>
-        <p>Gender:{gender}</p>
-        <p>Year of birth:{birth_year}</p>
-        <p>Skin Color:{skin_color}</p>
-        <p>Height:{height}</p>
+        <p>Gender: {gender}</p>
+        <p>Year of birth: {birth_year}</p>
+        <p>Skin Color: {skin_color}</p>
+        <p>Height: {height}</p>
       </article>
     </section>
   );

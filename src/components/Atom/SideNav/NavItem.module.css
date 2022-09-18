@@ -21,7 +21,11 @@
   border-radius: 4px;
 }
 
-/* .navlink:active {
-  background: #0a74dc;
-  border-radius: 4px;
+/* @media screen and (max-width: 768px) {
+  .navItem {
+    width: 100px;
+  }
+  .navlink {
+    padding: 5px 5px;
+  }
 } */

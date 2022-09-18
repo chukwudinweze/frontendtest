@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Logo from "../Atom/SideNav/Logo";
 import NavItem from "../Atom/SideNav/NavItem";
 import styles from "./sideNav.module.css";
 import GridViewIcon from "@mui/icons-material/GridView";
 
 import HighlightCheckRect from "../Atom/Overview/HighlightCheckRect";
+import NavContext from "../../store/side-context";
 
 const SideNav = () => {
+  const navCtx = useContext(NavContext);
   return (
-    <aside className={styles.aside}>
+    <aside className={navCtx.sideNav ? styles.mobile : styles.aside}>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
           <Logo />

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./NavItem.module.css";
 import { NavLink } from "react-router-dom";
+import NavContext from "../../../store/side-context";
 
 const NavItem = ({ to, Icon, title, Checkbox }) => {
+  const navCtx = useContext(NavContext);
   return (
-    <li className={styles.navItem}>
+    <li className={styles.navItem} onClick={() => navCtx.toggleSideNav()}>
       <NavLink
         style={({ isActive }) => ({
           background: !isActive ? "" : "#0a74dc",

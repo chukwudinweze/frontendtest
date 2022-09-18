@@ -34,10 +34,10 @@ const StarshipDetails = () => {
       </div>
       <article className={styles.article}>
         <strong>{name}</strong>
-        <p>Model:{model}</p>
-        <p>Passengers:{passengers}</p>
+        <p>Model: {model}</p>
+        <p>Passengers: {passengers}</p>
         <p>
-          Pilots:{pilots && pilots.map((pilot) => <p key={pilot}>pilot</p>)}
+          Pilots: {pilots && pilots.map((pilot) => <p key={pilot}>pilot</p>)}
         </p>
       </article>
     </section>

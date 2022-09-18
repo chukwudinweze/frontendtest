@@ -24,7 +24,7 @@
   padding: 30px;
   border: 1px solid rgba(164, 167, 183, 0.3);
   border-radius: 8px;
-  width: 300px;
+  width: 400px;
 }
 
 .termOFservice {
@@ -39,4 +39,22 @@
   text-align: center;
   color: #777c8a;
   margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+  }
+  .logo {
+    display: none;
+  }
+  .formgroup {
+    padding: 10px;
+  }
+  .form {
+    width: 100%;
+  }
 }

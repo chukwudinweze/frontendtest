@@ -3,8 +3,15 @@
   width: 107px;
   overflow: hidden;
   margin-bottom: 20px;
+  /* border: 1px solid red; */
 }
 
 .logo img {
   max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 100%;
+  }
 }

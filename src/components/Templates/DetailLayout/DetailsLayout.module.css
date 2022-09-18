@@ -1,6 +1,19 @@
 .section {
   display: flex;
 }
+
 .article {
   margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+  .section div {
+    overflow: hidden;
+  }
+  .article {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }

@@ -27,7 +27,6 @@ const LoginForm = () => {
       onSubmit={onSubmit}
     >
       {(formik) => {
-        console.log(formik);
         return (
           <Form>
             <strong>Login</strong>

@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navigation.module.css";
 import { useNavigate } from "react-router-dom";
+import NavContext from "../../store/side-context";
 
 const Navigation = ({ showArrowBack }) => {
+  const navCtx = useContext(NavContext);
+
   const navigate = useNavigate();
   return (
     <nav className={styles.nav}>
@@ -17,7 +21,12 @@ const Navigation = ({ showArrowBack }) => {
         <ArrowBackIosIcon />
         Back
       </button>
-
+      <button
+        className={styles.showMenuBar}
+        onClick={() => navCtx.toggleSideNav()}
+      >
+        <MenuIcon />
+      </button>
       <ul className={styles.ul}>
         <li>
           <button className={styles.notification}>

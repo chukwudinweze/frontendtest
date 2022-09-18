@@ -32,9 +32,9 @@ const FilmDetails = () => {
       </div>
       <article className={styles.article}>
         <strong>{title}</strong>
-        <p>Director:{director}</p>
-        <p>Producer:{producer}</p>
-        <p>Release Date:{release_date}</p>
+        <p>Director: {director}</p>
+        <p>Producer: {producer}</p>
+        <p>Release Date: {release_date}</p>
       </article>
     </section>
   );

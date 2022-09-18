@@ -29,4 +29,5 @@ a {
 /* global variables */
 :root {
   --brand-color: #031434;
+  --ipad__and__phone: 700px;
 }

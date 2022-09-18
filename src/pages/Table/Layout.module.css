@@ -4,12 +4,23 @@
   overflow: hidden;
 }
 
-.sideNavPosition {
-  flex: 1;
-}
+/* .sideNavPosition {
+  width: 15%;
+  border: 5px solid green;
+} */
 
 .formatpage {
   display: flex;
   flex-direction: column;
-  flex: 5;
+  width: 80%;
+  margin-right: -200px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    justify-content: left;
+  }
+  .formatpage {
+    width: 100%;
+  }
 }

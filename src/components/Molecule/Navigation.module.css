@@ -51,7 +51,6 @@ button {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  /* identical to box height */
 
   letter-spacing: -0.117188px;
 
@@ -60,4 +59,30 @@ button {
 
 .ul li {
   padding: 10px 20px;
+}
+
+.showMenuBar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .showMenuBar {
+    display: flex;
+  }
+  .hidden {
+    display: none;
+  }
+  .arrowBack {
+    margin-right: 15px;
+  }
+  .ul {
+    margin-left: 10px;
+  }
+  .ul li {
+    padding: 10px 5px;
+  }
 }

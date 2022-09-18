@@ -32,10 +32,10 @@ const SpeciesDetails = () => {
       </div>
       <article className={styles.article}>
         <strong>{name}</strong>
-        <p>Designation:{designation}</p>
-        <p>Language:{language}</p>
-        <p>Eye Colors:{eye_colors}</p>
-        <p>Average Lifespan:{average_lifespan}</p>
+        <p>Designation: {designation}</p>
+        <p>Language: {language}</p>
+        <p>Eye Colors: {eye_colors}</p>
+        <p>Average Lifespan: {average_lifespan}</p>
       </article>
     </section>
   );

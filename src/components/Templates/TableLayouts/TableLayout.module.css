@@ -3,12 +3,14 @@ table {
   background: #ffffff;
   border: 1px solid rgba(164, 167, 183, 0.4);
   border-radius: 4px;
+  overflow-x: scroll;
 }
 
 tr {
+  width: 100%;
+
   border: 1px solid #e5e5e5;
   box-shadow: 0px 0px 30px rgba(13, 47, 161, 0.07);
-  text-align: left;
   height: 70px;
 }
 tr:hover {
@@ -24,4 +26,9 @@ th {
 }
 th {
   color: #a4a7b7;
+}
+@media screen and (max-width: 768px) {
+  table {
+    display: block;
+  }
 }
