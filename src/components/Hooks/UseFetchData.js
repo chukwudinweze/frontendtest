@@ -33,7 +33,6 @@ const useFetchData = (url) => {
         };
       });
     } catch (error) {
-      console.log(error);
       //   set error state to true, if any error
       setResponse((prevState) => {
         return {

@@ -14,7 +14,6 @@ const useFetchDetail = (url) => {
         throw new Error("something");
       }
       const data = await response.json();
-      console.log("dataaaaa", data);
       setDetail(data);
     } catch (error) {
       setError(true);

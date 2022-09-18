@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { Form, Formik } from "formik";
 import { useNavigate } from "react-router-dom";
 
-import { validationSchema } from "../validationSchema";
+import { validationSchema } from "./validationSchema";
 
 const LoginForm = () => {
   const initialValues = {
@@ -14,7 +14,6 @@ const LoginForm = () => {
 
   let navigate = useNavigate();
   const onSubmit = (value, { resetForm }) => {
-    alert("Login successful");
     // navigate to overview page
     navigate("/overview");
     // clear input
